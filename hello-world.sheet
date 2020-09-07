@@ -1,0 +1,15 @@
+-- document setup
+device: MyDevice  fluidSynth  _useFont="./FluidR3 GM.sf2";
+instrumentDef: piano _onDevice=MyDevice  _ch=0   _pc=0;
+
+
+tempo: 120;
+
+[
+instrument: piano;
+{
+    -- the musical hello world ;-)
+    c d e f | g a b c'~ | c'1
+}
+]
+
