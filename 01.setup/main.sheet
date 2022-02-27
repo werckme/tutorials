@@ -1,0 +1,28 @@
+-- Two ways to produce sound:
+-- 1) Use one of your MIDI device on your computer
+--    type "sheetp --list" in your terminal, to see a list of your midi devices
+--    Any MIDI devie comes with an index number X 
+--    (e.g.: 4: "FLUID Synth (17624):Synth input port". 4 is the index number)
+--    Use that number X for the port argument:
+-- device: MyDevice _isType="midi" _usePort=X 
+
+-- 2) Use the internal fluidsynth player.
+-- "device: MyDevice _isType="fluidSynth" _useFont="path to .sf2 file";"
+--    On Mac: it is neccessary to have fluidsynth installed (e.g.: using homebrew: "brew install fluidsynth")
+--    On Windows: the fluidsynth dll comes preinstalled with werckmeister
+--    On Linux: I recommend to install QSynth instead and use option 1 above.  (e.g.: apt-get install qsynth)
+--
+-- For more details please find these tutorials:
+-- Mac: tbd
+-- Windows: tbd
+-- Linux: tbd
+
+device: MyDevice _isType="fluidSynth" _useFont="../FluidR3_GM.sf2";
+instrumentDef: paino _onDevice="MyDevice" _ch=0 _pc=0;
+
+[
+instrument: paino;
+{
+    c d e f | g a b c'~ | &1
+}
+]
