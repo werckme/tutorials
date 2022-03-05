@@ -4,7 +4,7 @@
 --    Any MIDI devie comes with an index number X 
 --    (e.g.: 4: "FLUID Synth (17624):Synth input port". 4 is the index number)
 --    Use that number X for the port argument:
--- device: MyDevice _isType="midi" _usePort=X 
+-- device: MyDevice _isType="midi" _usePort=X;
 
 -- 2) Use the internal fluidsynth player.
 -- "device: MyDevice _isType="fluidSynth" _useFont="path to .sf2 file";"
@@ -13,9 +13,8 @@
 --    On Linux: I recommend to install QSynth instead and use option 1 above.  (e.g.: apt-get install qsynth)
 --
 -- For more details please find these tutorials:
--- Mac: tbd
--- Windows: tbd
--- Linux: tbd
+-- Mac: https://youtu.be/cVB4e_90HY8
+-- Windows: https://youtu.be/zoN0lJwteP8
 
 device: MyDevice _isType="fluidSynth" _useFont="../FluidR3_GM.sf2";
 instrumentDef: paino _onDevice="MyDevice" _ch=0 _pc=0;

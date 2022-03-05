@@ -1,3 +1,7 @@
+-- A classical 50s chord progression for guitar, bass and drums.
+-- "Make of" Tutorial: 
+-- https://youtu.be/DME50L0P584
+
 using "/chords/default.chords";
 using "/lua/mods/myArpeggio.lua";
 using "./guitar.conductions";
