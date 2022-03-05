@@ -12,7 +12,7 @@
 --    On Windows: the fluidsynth dll comes preinstalled with werckmeister
 --    On Linux: I recommend to install QSynth instead and use option 1 above.  (e.g.: apt-get install qsynth)
 --
--- For more details please find these tutorials:
+-- For more details, find these tutorials:
 -- Mac: https://youtu.be/cVB4e_90HY8
 -- Windows: https://youtu.be/zoN0lJwteP8
 
