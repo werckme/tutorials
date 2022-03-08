@@ -8,7 +8,7 @@ using "./guitar.conductions";
 using "./drums.pitchmap";
 
 tempo: 140;
-device: MyDevice _isType="fluidSynth" _useFont="../FluidR3 GM.sf2";
+device: MyDevice _isType="fluidSynth" _useFont="../FluidR3_GM.sf2";
 instrumentDef: piano _onDevice="MyDevice" _ch=0 _pc=0;
 instrumentDef: guitar _onDevice="MyDevice" _ch=1 _pc=26;
 instrumentConf: guitar volume 80;
