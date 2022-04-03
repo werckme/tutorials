@@ -17,10 +17,10 @@
 -- Windows: https://youtu.be/zoN0lJwteP8
 
 device: MyDevice _isType="fluidSynth" _useFont="../FluidR3_GM.sf2";
-instrumentDef: paino _onDevice="MyDevice" _ch=0 _pc=0;
+instrumentDef: piano _onDevice="MyDevice" _ch=0 _pc=0;
 
 [
-instrument: paino;
+instrument: piano;
 {
     c d e f | g a b c'~ | &1
 }
