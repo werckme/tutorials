@@ -1,0 +1,12 @@
+using "./octaveSelector.conductions";
+
+device: MyDevice _isType="midi" _usePort=4;
+instrumentDef: piano _onDevice="MyDevice" _ch=0 _pc=5;
+
+
+[
+instrument: piano;
+{
+    c16 d e f g a b c' d' e' f' g' a' b' c''  d'' | e'' f'' g'' a'' b'' c''' r2 r8
+}
+]

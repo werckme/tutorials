@@ -1,0 +1,24 @@
+using "/chords/default.chords";
+using "./degreeSelector.conductions";
+
+device: MyDevice _isType="midi" _usePort=4;
+instrumentDef: piano _onDevice="MyDevice" _ch=0 _pc=5;
+
+[
+type: template;
+name: myTemplate;
+instrument: piano;
+{
+    I III V VII |
+}
+]
+
+
+[
+type: accomp;
+{
+   /template: myTemplate/
+   Fmaj7 | Fmaj7 | G7    | G7   |
+   G-7   | Gb7   | Fmaj7 | Gb7  |
+}
+]
