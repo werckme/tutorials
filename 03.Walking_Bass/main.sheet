@@ -1,8 +1,11 @@
+-- source where I've got the "walking bass formular" from:
+-- https://www.youtube.com/watch?v=Iuqti5Nq4_o&t=521s
+
 using "/chords/default.chords";
 using "./bass.conductions";
 
---device: MyDevice _isType="fluidSynth" _useFont="../FluidR3_GM.sf2";
-device: MyDevice _isType="midi" _usePort=4;
+device: MyDevice _isType="fluidSynth" _useFont="../FluidR3_GM.sf2";
+-- device: MyDevice _isType="midi" _usePort=4;
 instrumentDef: piano _onDevice="MyDevice" _ch=0 _pc=0;
 instrumentDef: bass _onDevice="MyDevice" _ch=1 _pc=32;
 
